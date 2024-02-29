@@ -1,7 +1,8 @@
 import { useState } from 'react';
-import { BeakerIcon } from '@heroicons/react/24/solid';
 import { IoMenu } from "react-icons/io5"; 
 import { IoMdClose } from "react-icons/io";
+import { FaHeartPulse } from "react-icons/fa6";
+
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -12,10 +13,10 @@ const Header = () => {
 
   return (
     <div className='shadow-md w-full'>
-      <div className="md:px-10 py-4 px-7">
+      <div className="md:px-6 py-4 px-7">
         <div className='flex justify-between items-center'>
           <div className='flex items-center gap-2'>
-            <BeakerIcon className="h-7 w-7 text-blue-600" />
+            <FaHeartPulse className="h-8 w-8 text-red-600" />
             <span className='font-bold'>ProHealthSeminar</span> 
           </div>
           <div className='md:hidden'>
