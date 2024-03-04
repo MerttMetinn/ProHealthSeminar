@@ -54,7 +54,7 @@ const Header = () => {
               <a href="/home" className="text-gray-400 hover:underline">
                 Anasayfa
               </a>
-              <Link to="/home/add-seminar" className="text-gray-400 hover:underline">
+              <Link to="/add-seminar" className="text-gray-400 hover:underline">
                 Seminer Ekle
               </Link>
             </nav>
@@ -65,7 +65,7 @@ const Header = () => {
             <a href="/home" className="m-2 text-gray-300">
               Anasayfa
             </a>
-            <Link to="/home/add-seminar" className="m-2 text-gray-300">
+            <Link to="/add-seminar" className="m-2 text-gray-300">
               Seminer Ekle
             </Link>
           </nav>
