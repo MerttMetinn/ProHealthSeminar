@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 const Seminar = () => {
   const [title, setTitle] = useState('');
-  const [topic, setTopic] = useState('');
+  const [content, setContent] = useState('');
   const [file, setFile] = useState(null);
 
   const handleTitleChange = (e) => {
@@ -10,7 +10,7 @@ const Seminar = () => {
   };
 
   const handleTopicChange = (e) => {
-    setTopic(e.target.value);
+    setContent(e.target.value);
   };
 
   const handleFileChange = (e) => {
@@ -20,10 +20,10 @@ const Seminar = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Title:', title);
-    console.log('Topic:', topic);
+    console.log('Content:', content);
     console.log('File:', file);
     setTitle('');
-    setTopic('');
+    setContent('');
     setFile(null);
   };
 
@@ -52,7 +52,7 @@ const Seminar = () => {
             </label>
             <textarea
               id="topic"
-              value={topic}
+              value={content}
               onChange={handleTopicChange}
               rows={6}
               className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline focus:border-blue-500"
