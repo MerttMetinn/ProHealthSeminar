@@ -18,7 +18,7 @@ const Login = () => {
     
 
     try {
-      const response = await axios.post('http://192.168.2.16:8181/login_ldap', formData, {
+      const response = await axios.post('http://185.92.2.229:8281/login_ldap', formData, {
         header: {
           'Content-Type': 'multipart/form-data',
         },
